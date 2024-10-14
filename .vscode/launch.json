@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bin2DecTest",
+            "request": "launch",
+            "mainClass": "Mod2PA3.bin2DecTest",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
             "name": "assign13_15",
             "request": "launch",
             "mainClass": "Mod3PA2.assign13_15",

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "assign13_15",
+            "request": "launch",
+            "mainClass": "Mod3PA2.assign13_15",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
             "name": "assign16_17",
             "request": "launch",
             "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",

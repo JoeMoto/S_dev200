@@ -15,51 +15,20 @@ import javafx.geometry.Insets;
 
 public class assign16_17 extends Application {
     protected Text text = new Text("Show Colors");
-    protected Slider slRed = new Slider();
-    protected Slider slGreen = new Slider();
-    protected Slider slBlue = new Slider();
-    protected Slider slOpacity = new Slider();
+    protected Slider slRed = new Slider(0.0, 1.0, 0.0);
+    protected Slider slGreen = new Slider(0.0, 1.0, 0.0);
+    protected Slider slBlue = new Slider(0.0, 1.0, 0.0);
+    protected Slider slOpacity = new Slider(0.0, 1.0, 1.0);
 
     public static void main(String[] args) {
         launch(args);
     }
 
-    @Override
+    @Override // Override the start method in the Application class
     public void start(Stage primaryStage) {
-        // Create a stack pane for text
-        StackPane paneForText = new StackPane(text);
-        paneForText.setPadding(new Insets(20, 10, 5, 10));
-
-        // Set slider properties
-        slRed.setMin(0.0);
-        slRed.setMax(1.0);
-        slGreen.setMin(0.0);
-        slGreen.setMax(1.0);
-        slBlue.setMin(0.0);
-        slBlue.setMax(1.0);
-        slOpacity.setMin(0.0);
-        slOpacity.setMax(1.0);
-
-        // Create listeners
-        slRed.valueProperty().addListener(ov -> setColor());
-        slGreen.valueProperty().addListener(ov -> setColor());
-        slBlue.valueProperty().addListener(ov -> setColor());
-        slOpacity.valueProperty().addListener(ov -> setColor());
-        slOpacity.setValue(1);
-
-        // Create a grid pane for labeled sliders
-        GridPane paneForSliders = new GridPane();
-        paneForSliders.setAlignment(Pos.CENTER);
-        paneForSliders.setVgap(5);
-        paneForSliders.setHgap(5);
-        paneForSliders.add(new Label("Red"), 0, 0);
-        paneForSliders.add(slRed, 1, 0);
-        paneForSliders.add(new Label("Green"), 0, 1);
-        paneForSliders.add(slGreen, 1, 1);
-        paneForSliders.add(new Label("Blue"), 0, 2);
-        paneForSliders.add(slBlue, 1, 2);
-        paneForSliders.add(new Label("Opacity"), 0, 3);
-        paneForSliders.add(slOpacity, 1, 3);
+        // Create and set up the UI components
+        StackPane paneForText = createTextPane();
+        GridPane paneForSliders = createSlidersPane();
 
         // Place nodes in a border pane
         BorderPane pane = new BorderPane();
@@ -73,7 +42,40 @@ public class assign16_17 extends Application {
         primaryStage.show(); // Display the stage
     }
 
-    /* Set the color of text */
+    /** Create a StackPane for the text */
+    private StackPane createTextPane() {
+        StackPane pane = new StackPane(text);
+        pane.setPadding(new Insets(20, 10, 5, 10));
+        return pane;
+    }
+
+    /** Create a GridPane for the sliders with labels */
+    private GridPane createSlidersPane() {
+        GridPane pane = new GridPane();
+        pane.setAlignment(Pos.CENTER);
+        pane.setVgap(5);
+        pane.setHgap(5);
+
+        // Add labels and sliders to the pane
+        pane.add(new Label("Red"), 0, 0);
+        pane.add(slRed, 1, 0);
+        pane.add(new Label("Green"), 0, 1);
+        pane.add(slGreen, 1, 1);
+        pane.add(new Label("Blue"), 0, 2);
+        pane.add(slBlue, 1, 2);
+        pane.add(new Label("Opacity"), 0, 3);
+        pane.add(slOpacity, 1, 3);
+
+        // Set up slider listeners
+        slRed.valueProperty().addListener(ov -> setColor());
+        slGreen.valueProperty().addListener(ov -> setColor());
+        slBlue.valueProperty().addListener(ov -> setColor());
+        slOpacity.valueProperty().addListener(ov -> setColor());
+
+        return pane;
+    }
+
+    /** Set the text color */
     private void setColor() {
         text.setFill(new Color(slRed.getValue(), slGreen.getValue(),
                 slBlue.getValue(), slOpacity.getValue()));

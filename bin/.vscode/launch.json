@@ -1,0 +1,143 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "assign16_17",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod5PA3.assign16_17",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign15_7",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod5PA2.assign15_7",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign16_17",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "assign16_17",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign15_7",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "assign15_7",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign14_1",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "assign14_1",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "App",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "src.App",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "assign6_9",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod1PA1.assign6_9",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign6_3",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod1PA2.assign6_3",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign8_29",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod1PA3.assign8_29",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign10_14",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod2PA1.assign10_14",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign11_1",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod2PA2.assign11_1",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign13_9",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod3PA1.assign13_9",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign20_11",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod4PA1.assign20_11",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign21_3",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod4PA2.assign21_3",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
+            "name": "assign14_1",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod5PA1.assign14_1",
+            "projectName": "S_dev200_e07435ba"
+        }
+    ]
+}

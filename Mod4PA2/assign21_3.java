@@ -61,6 +61,7 @@ public class assign21_3 {
                 count++;
         }
 
+        input.close();
         return count;
     }
 }

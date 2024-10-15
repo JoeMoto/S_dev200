@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "assign34_1",
+            "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
+            "mainClass": "Mod6PA1.assign34_1",
+            "projectName": "S_dev200_e07435ba"
+        },
+        {
+            "type": "java",
             "name": "assign24_3",
             "request": "launch",
             "mainClass": "Mod4PA3.assign24_3",
@@ -15,6 +23,7 @@
             "type": "java",
             "name": "FinalApp",
             "request": "launch",
+            "vmArgs": "--module-path C:/JavaFX/javafx-sdk-23/lib --add-modules javafx.controls,javafx.fxml,javafx.web",
             "mainClass": "ItineraryPlanner.FinalApp",
             "projectName": "S_dev200_e07435ba"
         },

@@ -12,5 +12,21 @@
         "c:\\JavaFX\\javafx-sdk-23\\lib\\javafx.swing.jar",
         "c:\\JavaFX\\javafx-sdk-23\\lib\\javafx.graphics.jar",
         "c:\\JavaFX\\javafx-sdk-23\\lib\\javafx.base.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "jdbc:mysql://localhost:3306/staff",
+            "database": "staff",
+            "username": "root",
+            "password": ""
+        }
     ]
 }

@@ -1,0 +1,122 @@
++------------------------------------------------+
+|                   <<abstract>>                 |
+|                      Traveler                  |
++------------------------------------------------+
+| # travelerID : String                          |
+| # firstName : String                           |
+| # lastName : String                            |
++------------------------------------------------+
+| + Traveler(travelerID : String,                |
+|            firstName : String,                 |
+|            lastName : String)                  |
+| + getTravelerID() : String                     |
+| + getFirstName() : String                      |
+| + getLastName() : String                       |
+| + setTravelerID(travelerID : String) : void    |
+| + setFirstName(firstName : String) : void      |
+| + setLastName(lastName : String) : void        |
++------------------------------------------------+
+
+                          ^
+                          |
+                   Inherits from
+                          |
++------------------------------------------------+
+|                 TravelPlanner                  |
++------------------------------------------------+
+|                                                |
++------------------------------------------------+
+| + TravelPlanner(travelerID : String,           |
+|                 firstName : String,            |
+|                 lastName : String)             |
+| + createItinerary(startDate : String,          |
+|                   endDate : String) : Itinerary|
++------------------------------------------------+
+
+(1) Traveler <---- (1..*) Itinerary
+(1) Itinerary <---- (1..*) ItineraryDetail
+
++------------------------------------------------+
+|                    Itinerary                   |
++------------------------------------------------+
+| - itineraryID : String                         |
+| - travelerID : String                          |
+| - startDate : String                           |
+| - endDate : String                             |
++------------------------------------------------+
+| + Itinerary(itineraryID : String,              |
+|             travelerID : String,               |
+|             startDate : String,                |
+|             endDate : String)                  |
+| + getItineraryID() : String                    |
+| + getTravelerID() : String                     |
+| + getStartDate() : String                      |
+| + getEndDate() : String                        |
+| + setItineraryID(itineraryID : String) : void  |
+| + setTravelerID(travelerID : String) : void    |
+| + setStartDate(startDate : String) : void      |
+| + setEndDate(endDate : String) : void          |
++------------------------------------------------+
+
++------------------------------------------------+
+|                 ItineraryDetail                |
++------------------------------------------------+
+| - itineraryID : String                         |
+| - activityName : String                        |
+| - startTime : String                           |
+| - endTime : String                             |
+| - activityCost : double                        |
++------------------------------------------------+
+| + ItineraryDetail(itineraryID : String,        |
+|                   activityName : String,       |
+|                   startTime : String,          |
+|                   endTime : String,            |
+|                   activityCost : double)       |
+| + getItineraryID() : String                    |
+| + getActivityName() : String                   |
+| + getStartTime() : String                      |
+| + getEndTime() : String                        |
+| + getActivityCost() : double                   |
+| + setItineraryID(itineraryID : String) : void  |
+| + setActivityName(activityName : String) : void|
+| + setStartTime(startTime : String) : void      |
+| + setEndTime(endTime : String) : void          |
+| + setActivityCost(activityCost : double) : void|
++------------------------------------------------+
+
++------------------------------------------------+
+|                   DataHandler                  |
++------------------------------------------------+
+| - TRAVELER_FILE : String                       |
+| - ITINERARY_FILE : String                      |
+| - ITINERARY_DETAIL_FILE : String               |
+| - DELIMITER : String                           |
++------------------------------------------------+
+| + saveTraveler(traveler : Traveler) : void                   |
+| + getTraveler(travelerID : String) : Traveler                |
+| + updateTraveler(updatedTraveler : Traveler) : void          |
+| + saveItinerary(itinerary : Itinerary) : void                |
+| + getItinerary(itineraryID : String) : Itinerary             |
+| + getItinerariesByTravelerID(travelerID : String) :          |
+|       List<Itinerary>                                        |
+| + saveItineraryDetail(detail : ItineraryDetail) : void       |
+| + getItineraryDetails(itineraryID : String) :                |
+|       List<ItineraryDetail>                                  |
++------------------------------------------------+
+
++------------------------------------------------+
+|                     MainApp                    |
++------------------------------------------------+
+| - currentTraveler : TravelPlanner              |
+| - currentItinerary : Itinerary                 |
++------------------------------------------------+
+| + start(primaryStage : Stage) : void           |
+| + initTravelerTab() : VBox                     |
+| + initItineraryTab() : VBox                    |
+| + initActivityTab() : VBox                     |
+| + initRetrievalTab() : VBox                    |
+| + showAlert(type : AlertType,                  |
+|             title : String,                    |
+|             message : String) : void           |
+| + main(args : String[]) : void                 |
++------------------------------------------------+

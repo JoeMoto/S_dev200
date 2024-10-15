@@ -27,6 +27,20 @@
             "database": "staff",
             "username": "root",
             "password": ""
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "jdbc:mysql://localhost:3306/records",
+            "database": "records",
+            "username": "root",
+            "password": ""
         }
     ]
 }
